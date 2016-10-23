@@ -1,0 +1,283 @@
+/**********************
+GENERAL
+************************/
+
+*{
+	box-sizing:border-box;
+}
+
+body{
+	font-family: Tahoma, Verdana, Arial, Helvetica;
+	margin: auto;
+	text-align: center;
+	width: 100%;
+	background-color: #fff;
+}
+
+h1,
+h2,
+h3 {
+	text-align: center;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+
+h4 {
+	font-size: 0.825em;
+
+}
+
+ul {
+	list-style: none;
+	text-decoration: none;
+	font-size: 0.825em;
+}
+
+ul li {
+	background-color: #fff;
+	margin-top: 5px;
+	padding: 5px 50px;
+	
+}
+
+a{
+	text-decoration: none;
+	padding: 5px 50px;
+
+}
+
+p{
+	font-size: 0.925em;
+}
+
+img{
+	width: 60%;
+	border-radius:15px;
+}
+
+
+
+footer{
+	background-color: #f2f2f2;
+}
+
+/**********************
+Layout Styles 
+************************/
+
+
+
+/**********************
+CLASSES
+************************/
+.banner{
+	background-color:#f2f2f2;
+	width: 100%;
+	padding-top: 1em;
+	padding-bottom: 1em; 
+}
+
+.name{
+	margin-top: 0px;
+}
+
+.profile{
+	text-align: center;
+}
+.content,
+.footercontent{
+	width: 90%;
+}
+
+.footermenu{
+	padding-top: 1em;
+}
+
+.nav{
+	padding-left: 0px;
+}
+
+.maincontent{
+	background-color: #fff;
+	padding:20px;
+}
+
+.namefooter{
+	margin-right: 20px;
+	padding-bottom: 10px;
+}
+
+.namefooter,
+.navfooter,
+.navfooter li {
+	font-size: 0.825em;
+	font-weight: bold;
+	/*float: left;*/
+	display: inline;
+}
+
+.namefooter{
+	float: left;
+}
+
+.navfooter a {
+	float: right;
+	padding-left:20px; 
+}
+
+.contactinfo{
+	margin-bottom: 50px;
+	line-height: 0.95em;
+	/*font-weight: italic;*/
+}
+
+.nav-media{
+	display: none;
+}
+
+/**********************
+MEDIA QUERIES
+************************/
+
+@media (min-width: 769px ) {
+
+	body{
+		width: 100%
+	}
+
+	img{
+		width: 50%;
+	}
+
+	ul li{
+		background-color: transparent;
+		padding: 5px 10px;
+	}
+
+	a{
+		padding: 15px;
+	}
+
+	.content{
+		width: 90%;
+	}
+
+	.bannercontent,
+	.footercontent{
+		margin: 0 auto;
+		width: 85%;
+	}
+
+	.name,
+	.nav a{
+		text-align: center;
+	}
+
+	.maincontent {
+		width: 100%;
+	}
+
+	.maincontent img {
+		width: 100%;
+		/*margin-right: 30px;
+		padding-left: 20px;*/
+	}
+
+
+	.one,
+	.two,
+	.three,
+	.four,
+	.five,
+	.six{
+		width: 45%;
+		float: left;
+		margin-right: 20px;
+	}
+
+
+
+	.nav li{
+		display: inline;
+
+		/*float: left;
+		padding: 0px;*/
+	}
+
+	.profile{
+		margin-bottom: 50px;
+	}
+
+	.profile p {
+		text-align: left;
+		padding-right: 5em;
+	}
+
+
+	.profile-photo{
+		float: right;
+		width: 40%;
+		padding-left: 20px;
+	}
+
+	.namefooter{
+		float: left;
+	}
+
+	.navfooter{
+		display: none;
+	}
+
+	.nav-media {
+		float: right;
+		display: inline;
+	}
+
+	.nav-media li{
+		float: left;
+	}
+
+	.contactinfo p{
+		width:400px;
+		padding-bottom: 10px;
+		margin: auto;
+	}
+
+	.clearfix::after {
+		content:"";
+		display: table;
+		clear: both;
+	}
+}
+
+@media (min-width: 1024px) {
+	.name{
+		float: left;
+		margin-right: 250px;
+	}
+
+	/*.content{
+		width: 90%;
+	}*/
+
+	.one,
+	.two,
+	.three,
+	.four,
+	.five,
+	.six{
+		width: 30%;
+	}
+
+	.maincontent{
+		width: 90%;
+		margin:auto;
+	}
+
+	.profile-photo{
+		vertical-align: right;
+	}
+}
