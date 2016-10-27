@@ -246,6 +246,23 @@ MEDIA QUERIES
 		margin: auto;
 	}
 
+	.skill-set,
+	.skill-set div{
+		/*display: block;*/
+		margin-bottom: 5%;
+	}
+
+	.skill-set h3{
+		float: left;
+		margin-left: 20%;
+	}
+
+	.skill-set img {
+		border-radius: 100%;
+		width: 100px;
+		height: 100px;
+	}
+
 	.clearfix::after {
 		content:"";
 		display: table;
@@ -277,7 +294,7 @@ MEDIA QUERIES
 		margin:auto;
 	}
 
-	.profile-photo{
+	/*.profile-photo{
 		vertical-align: right;
-	}
+	}*/
 }
